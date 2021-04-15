@@ -8,11 +8,11 @@ describe('Login test cases', function () {
 	const homePage = new HomePage();
 	const commonPage = new CommonPage();
 
-	it('Login valid credentials and verify sucessful login', function () {
+	it('Login valid credentials and verify successful login', function () {
 		loginPage.login(this.data.validEmail, this.data.validPassword);
 		homePage.verifyURL('inventory');
 		commonPage.clickMoreMenu();
-		commonPage.clickLogout();
+		//commonPage.clickLogout();
 	});
 
 	it('login with invalid credentials and verify error message', function () {
