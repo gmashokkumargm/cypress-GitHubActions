@@ -17,5 +17,4 @@ jobs:
               uses: cypress-io/github-action@v2
               with:
                   browser: chrome
-                  parallel: true
                   start: npm run test
