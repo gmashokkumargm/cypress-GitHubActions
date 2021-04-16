@@ -3,7 +3,13 @@
 
 name: Cypress automation testcases
 
-on: [push]
+on:
+  schedule:
+    - cron: '50 3 * * *'
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
 
 jobs:
     cypress-run:
