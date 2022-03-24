@@ -7,7 +7,6 @@ import CheckoutCompletePage from '../../support/pages/CheckoutCompletePage';
 import CommonPage from '../../support/pages/CommonPage';
 
 describe('Add to card and checkout the product', function () {
-	//To access all the methods in the pages creating objects
 	const loginPage = new LoginPage();
 	const homePage = new HomePage();
 	const cartPage = new CartPage();
@@ -15,8 +14,6 @@ describe('Add to card and checkout the product', function () {
 	const checkoutOverviewPage = new CheckoutOverviewPage();
 	const checkoutCompletePage = new CheckoutCompletePage();
 	const commonPage = new CommonPage();
-
-	//Importing url from cypress.json and data from fixtures folder
 
 	it('Add one product to cart, checkout and verify thankyou page', function () {
 		var productName = 'Test.allTheThings() T-Shirt (Red)';

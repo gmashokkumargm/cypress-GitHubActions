@@ -3,7 +3,6 @@ import HomePage from '../../support/pages/HomePage';
 import CommonPage from '../../support/pages/CommonPage';
 
 describe('Login test cases', function () {
-	//To access all the methods from pages
 	const loginPage = new LoginPage();
 	const homePage = new HomePage();
 	const commonPage = new CommonPage();
@@ -12,7 +11,6 @@ describe('Login test cases', function () {
 		loginPage.login(this.data.validEmail, this.data.validPassword);
 		homePage.verifyURL('inventory');
 		commonPage.clickMoreMenu();
-		//commonPage.clickLogout();
 	});
 
 	it('login with invalid credentials and verify error message', function () {
